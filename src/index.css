@@ -1,13 +1,67 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 12px !important;
+  transition: all 0.3s linear;
+  background: linear-gradient(
+    to top,
+    hsl(240, 73%, 65%),
+    hsl(273, 75%, 66%)
+  ) !important;
+  background-repeat: no-repeat !important;
+  font-family: "Kumbh Sans", sans-serif !important;
+}
+.icon-color {
+  color: hsl(14, 88%, 65%);
+}
+
+.main {
+  background-color: white;
+  margin: 0px 1rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.4rem;
+  width: 900px;
+  padding-right: 1rem;
+  padding: 4rem 0;
+  padding-bottom: 6rem;
+}
+
+.MuiPaper-elevation {
+  border: none !important;
+  box-shadow: none !important;
+}
+.woman-wrapper {
+  /* background: url("../src//images/bg-desk.svg") no-repeat right; */
+}
+.woman-img {
+  width: 80%;
+}
+@media screen and (max-width: 780px) {
+  .main {
+    flex-direction: column;
+    padding-right: 0;
+    padding: 0rem 0;
+    padding-bottom: 0;
+  }
+
+  .woman-img {
+    width: 50% !important;
+    position: absolute;
+    bottom: 2rem;
+    left: 23%;
+  }
+  .woman-wrapper {
+    position: relative;
+    padding: 3rem 0;
+  }
 }
